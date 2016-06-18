@@ -1,4 +1,4 @@
-function generate() {
+﻿function generate() {
 var numbers = [];
 for(var i=0; i<6; i++) {
 var number = Math.floor(Math.random() * 45) + 1;
@@ -8,7 +8,7 @@ i--;
 numbers.push(number);
 }
 }
-return numbers;
+return numbers.sort((a, b) => { return a-b});
 }
 /* 배열 안에 number가 포함되어 있는지 확인*/
 function contains(numbers, number) {
